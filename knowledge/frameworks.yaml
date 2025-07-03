@@ -1,0 +1,33 @@
+# /knowledge/frameworks.yaml
+# Version: 1.0
+# Last Updated: 2025-07-03
+# Description: This file contains the knowledge base for various structured prompting frameworks. It is used by the Prompt Architect to suggest advanced templates for complex tasks.
+
+entry_name: Frameworks
+type:
+  - Prompt Engineering
+  - Advanced Prompting Technique
+description: What structured prompting frameworks can be used to guide the AI through complex tasks like creative brainstorming, problem-solving, or narrative generation?
+core_components:
+  - name: "RISEN (In-depth Analysis)"
+    description: "A framework for directing AI models to go beyond surface-level advice and think critically and creatively for more in-depth responses."
+  - name: "BAB (Persuasive Narrative)"
+    description: "Uses storytelling (Before, After, Bridge) to connect a user's current problem to a desired solution."
+  - name: "Tree of Thought (ToT) (Complex Problem-Solving)"
+    description: "Directs the model to explore multiple reasoning paths simultaneously, mimicking human decision-making."
+  - name: "RASCEF (Comprehensive Master Template)"
+    description: "A comprehensive template that combines all core components of a detailed prompt (Role, Action, Steps, Context, Examples, Format)."
+mechanism_and_use:
+  - name: "Applying a Framework"
+    description: "Instead of building a prompt from scratch with the five core components, you select a pre-defined framework like STAR or Six Thinking Hats when the task aligns with its specific use case."
+  - name: "Framework Example (STAR)"
+    description: "To generate a behavioral interview answer, you would guide the AI with prompts for each component: Situation, Task, Action, and Result."
+connections_and_applications:
+  description: "Frameworks provide a structured, advanced alternative to the basic core components for guiding the AI through specific, well-defined types of tasks."
+  related_entries:
+    - Process & Philosophy
+  practical_examples:
+    - name: "Generating a Pitch"
+      details: "Using the BAB (Before, After, Bridge) framework is highly effective for creating persuasive marketing copy or a business pitch."
+simple_explanation: >
+  Frameworks are like special recipes for specific kinds of questions. If you want to tell a story, you use the STAR recipe. If you want to solve a tough problem, you use the Tree of Thought recipe. They give you a proven step-by-step guide.

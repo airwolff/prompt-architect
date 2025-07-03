@@ -1,0 +1,40 @@
+# /knowledge/context.yaml
+# Version: 1.0
+# Last Updated: 2025-07-03
+# Description: This file contains the knowledge base for the "Context" prompt component. It is used by the Prompt Architect to guide users in providing the necessary background information or data for an AI task.
+
+entry_name: Context
+type:
+  - Prompt Engineering
+  - Core Prompt Component
+description: What essential background information, reference text, or specific data should the AI be aware of to accurately address your request and prevent factual errors?
+core_components:
+  - name: "Best Practices (Do's)"
+    description:
+      - "Provide explicit reference text whenever the task requires proprietary or recent information to prevent hallucination."
+      - "Use clear delimiters (e.g., ###, <context>) to sharply distinguish between instructions and reference text."
+      - "Ensure the provided context is accurate and relevant. The principle of 'garbage in, garbage out' applies."
+  - name: "Common Pitfalls (Don'ts)"
+    description:
+      - "Do not ask the model to perform tasks based on information it couldn't possibly know without providing that information."
+      - "Avoid overloading the prompt with irrelevant information that could confuse the model."
+mechanism_and_use:
+  - name: "Effective Application (Good Examples)"
+    description:
+      - "Answer the question based on the context below. Respond 'Unsure about answer' if the information is not present. Context: ### [Paste article here] ### Question: What was the primary finding?"
+      - "Based on the attached financial report, analyze the company's profitability over the past five years."
+  - name: "Ineffective Application (Bad Examples)"
+    description:
+      - "Analyze our company's profitability over the past five years."
+      - "[Pasting entire codebase] Help me with my Python code."
+connections_and_applications:
+  description: "Context provides the 'grounding truth' for the Task. It is the information, data, or source text that the AI must operate on."
+  related_entries:
+    - Task
+    - Constraints
+    - Format
+  practical_examples:
+    - name: "Report Analysis"
+      details: "Summarize the key findings from the following research paper. <context>[Paste paper here]</context>"
+simple_explanation: >
+  If you ask the AI to summarize a book, the Context is the book itself. You have to give it the information it needs to work with, otherwise it's just guessing.

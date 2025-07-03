@@ -1,0 +1,44 @@
+# /knowledge/process.yaml
+# Version: 1.0
+# Last Updated: 2025-07-03
+# Description: This file contains the knowledge base for the "Process & Philosophy" of prompt engineering. It is used by the Prompt Architect to instill a systematic, iterative approach to prompt design.
+
+entry_name: Process & Philosophy
+type:
+  - Prompt Engineering
+  - Mindset
+description: How can you systematically approach your interactions with AI models to continuously refine outputs, learn from results, and adapt your prompting strategy for optimal and reliable performance over time?
+core_components:
+  - name: "Best Practices (Do's)"
+    description:
+      - "Treat Prompting as an Iterative, Test-Driven Process: Start simple, assess, identify shortcomings, adjust, and repeat."
+      - "Break Down Complex Tasks (Prompt Chaining): Decompose complex requests into a sequence of simpler, interconnected prompts."
+      - "Elicit Deeper Reasoning with Chain-of-Thought (CoT): Instruct the model to 'think step by step' to improve accuracy."
+  - name: "Common Pitfalls (Don'ts)"
+    description:
+      - "Don't Expect Perfection on the First Try: Iteration is a fundamental part of the process."
+      - "Don't Trust AI Blindly: Always fact-check and review outputs with a critical eye."
+      - "Avoid Random Tweaking: Base refinements on a clear hypothesis about why the previous prompt failed."
+mechanism_and_use:
+  - name: "Effective Application (Good Examples)"
+    description:
+      - "Iterative Refinement: A user starts with 'Summarize this interview.' and refines it to 'Step 1: Identify what the customer liked. Step 2: Detail each frustration...' to get a much richer output."
+      - "Meta-Prompt for Refinement: 'Improve the following prompt to generate a more detailed summary...'"
+  - name: "Ineffective Application (Bad Examples)"
+    description:
+      - "Making multiple simultaneous edits, making it impossible to attribute the change in output."
+      - "Continuously re-running the same failed prompt without making any changes, hoping for a different result."
+connections_and_applications:
+  description: "Process & Philosophy is the meta-layer that governs how you apply all other components. It is the iterative, test-driven mindset used to build and refine prompts."
+  related_entries:
+    - Task
+    - Persona
+    - Context
+    - Constraints
+    - Format
+    - Frameworks
+  practical_examples:
+    - name: "Debugging a Failed Prompt"
+      details: "Instead of giving up, a good prompter analyzes the bad output, forms a hypothesis ('I think my persona was too vague'), makes a single change, and tests again. This is the iterative process in action."
+simple_explanation: >
+  This is the main rulebook for being a good prompter. It's not about one specific prompt, but about how you should think. The biggest rule is: don't expect to get it right the first time. Try something, see what happens, and make small changes until it works perfectly.
