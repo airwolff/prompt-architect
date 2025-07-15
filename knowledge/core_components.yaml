@@ -1,0 +1,67 @@
+# /knowledge/core_components.yaml
+# Version: 1.0
+# Last Updated: 2025-07-11
+# Description: This file contains the consolidated knowledge base for the five core components of prompt architecture: Task, Persona, Context, Constraints, and Format.
+
+entry_name: Core Prompt Components
+type:
+  - Prompt Engineering
+  - Foundational Concept
+description: The five fundamental building blocks (Task, Persona, Context, Constraints, Format) that form the basis of any well-architected prompt, ensuring clarity, focus, and effectiveness.
+core_components:
+  - name: Task
+    description: Clearly defines the specific action or goal you want the AI model to perform, ensuring it includes a strong verb or command for a focused and actionable response.
+    best_practices:
+      - Place the primary instruction at the beginning of the prompt to anchor the model's attention.
+      - Use clear, direct, and unambiguous action verbs to specify the task (e.g., 'Summarize', 'Generate', 'Classify').
+      - Split up complex tasks into smaller, simpler subtasks or a numbered list of steps.
+    common_pitfalls:
+      - Avoid burying the main directive after large blocks of context.
+      - Do not be vague or ambiguous; the model cannot read your mind.
+
+  - name: Persona
+    description: Assigns a specific role, expertise, or perspective for the AI to embody, ensuring optimal tone, content, and style for the target audience.
+    best_practices:
+      - Assign a specific, expert persona to elicit more detailed and accurate responses (e.g., 'Act as a senior software architect').
+      - Define the target audience to help the AI tailor its tone, content, and style.
+    common_pitfalls:
+      - Avoid generic prompts without a persona when seeking expert-level content.
+      - Do not use overly simplistic role descriptions. 'Act as an expert' is less effective than 'Act as a constitutional law professor'.
+
+  - name: Context
+    description: Provides the essential background information, reference text, or specific data the AI needs to be aware of to accurately address your request and prevent factual errors.
+    best_practices:
+      - Provide explicit reference text whenever the task requires proprietary or recent information to prevent hallucination.
+      - Use clear delimiters (e.g., ###, <context>) to sharply distinguish between instructions and reference text.
+    common_pitfalls:
+      - Do not ask the model to perform tasks based on information it couldn't possibly know without providing that information.
+      - Avoid overloading the prompt with irrelevant information that could confuse the model.
+
+  - name: Constraints
+    description: Sets the specific rules, boundaries, or limitations the AI must adhere to, ensuring the output is safe, compliant, and meets exact requirements.
+    best_practices:
+      - Frame constraints as positive, affirmative directives. Tell the model what to do instead of what not to do.
+      - Be explicit and quantitative with constraints, especially for length (e.g., 'Summarize in under 100 words').
+    common_pitfalls:
+      - Relying heavily on negative constraints like 'DO NOT...'. Models can struggle to process negations.
+      - Using vague constraints like 'fairly short' or 'not too long'.
+
+  - name: Format
+    description: Defines the specific structure or presentation for the AI's response (e.g., JSON, Markdown, bulleted list) to ensure clarity and utility.
+    best_practices:
+      - Explicitly specify the desired output format, such as JSON, Markdown, CSV, or a bulleted list.
+      - Provide few-shot examples that demonstrate the exact output structure you require.
+    common_pitfalls:
+      - Do not assume the model will guess the correct format; without explicit instructions, the output will likely be unstructured prose.
+      - Don't just describe the format; show it with an example.
+
+mechanism_and_use:
+  - name: Sequential Application
+    description: The five components are typically applied sequentially to build a prompt. A user first defines the Task, then assigns a Persona, provides Context, sets Constraints, and finally specifies the Format.
+connections_and_applications:
+  description: The five core components are the universal grammar of prompt engineering. Mastering their use is the foundation for building reliable, effective, and sophisticated prompts for any purpose. They are the meta-layer that governs all prompt design.
+  related_entries:
+    - Process & Philosophy
+    - Frameworks
+simple_explanation: >
+  It's like giving instructions to a new personal assistant. You tell them what to DO (Task), how to ACT (Persona), what to READ (Context), the RULES to follow (Constraints), and how to give you the final REPORT (Format). You need all five for them to do the job perfectly.

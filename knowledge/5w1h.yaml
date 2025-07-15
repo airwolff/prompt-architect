@@ -1,0 +1,44 @@
+# /knowledge/scope/5w1h.yaml
+# Version: 1.0
+# Last Updated: 2025-07-11
+# Description: A foundational heuristic using six questions (Who, What, When, Where, Why, How) to gather comprehensive information, structure analysis, and provide full context for any situation.
+
+entry_name: The 5W1H Framework
+type:
+  - Information Gathering
+  - Analytical Framework
+  - Prompt Engineering
+description: A foundational heuristic using six questions (Who, What, When, Where, Why, How) to gather comprehensive information, structure analysis, and provide full context for any situation.
+core_components:
+  - name: Who
+    description: Identifies all relevant persons, groups, or entities involved, affected, or responsible.
+  - name: What
+    description: Describes the situation, event, problem, or action at the center of the analysis, defining the scope and objectives.
+  - name: When
+    description: Establishes the temporal context, including dates, duration, deadlines, and frequency.
+  - name: Where
+    description: Pinpoints the geographical, situational, or virtual location or environment.
+  - name: Why
+    description: Uncovers the underlying reason, purpose, motivation, or cause, moving from description to explanation.
+  - name: How
+    description: Explains the process, method, or manner in which something is done, addressing the practical, operational details.
+mechanism_and_use:
+  - name: Deep Inquiry
+    description: Using the six questions as starting points to generate more specific, probing sub-questions that transform the framework from a simple checklist into a dynamic tool for discovery.
+  - name: The "Start with Why" Paradigm
+    description: A strategic reordering of the questions, often used in leadership communication, that begins with the purpose ('Why') to inspire action before explaining the 'How' and 'What'.
+connections_and_applications:
+  description: A universal and domain-agnostic framework that serves as a foundational data-gathering tool, providing the factual baseline required for deeper analysis with more complex frameworks.
+  related_entries:
+    - 5 Whys
+    - SWOT Analysis
+    - PESTLE Analysis
+  practical_examples:
+    - name: Journalism
+      details: Used to structure the lead paragraph of a news story to ensure all essential facts are delivered concisely to the reader.
+    - name: Project Management
+      details: Serves as a crucial tool during project initiation to define the business case, scope, stakeholders, timeline, and methodology.
+    - name: Criminal Investigations
+      details: Provides a systematic method for gathering facts about a crime, including the victim/offender, sequence of events, motive, and modus operandi.
+simple_explanation: >
+  It's like being a detective or a reporter. To understand any story or problem, you ask six basic questions: Who was involved? What happened? When did it happen? Where did it happen? Why did it happen? And How did it happen? Answering these ensures you have the complete picture before you act.

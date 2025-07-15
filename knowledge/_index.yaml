@@ -1,0 +1,41 @@
+# /knowledge/_index.yaml
+# Version: 1.0
+# Last Updated: 2025-07-11
+# Description: A master index of all entries in the knowledge base, used for high-level lookup and discovery.
+
+knowledge_base_index:
+  entries:
+    - entry_name: Jobs to Be Done (JTBD)
+      type:
+        - Innovation Framework
+        - Customer Research
+        - Product Strategy
+      description: An innovation framework positing that customers "hire" products or services to make specific progress or get a "job" done in their lives, shifting focus from product features to the customer's underlying motivation and desired outcome.
+    - entry_name: Frameworks
+      type:
+        - Prompt Engineering
+        - Advanced Prompting Technique
+      description: What structured prompting frameworks can be used to guide the AI through complex tasks like creative brainstorming, problem-solving, or narrative generation?
+    - entry_name: Cynefin Framework
+      type:
+        - Decision-Making Framework
+        - Sense-Making Model
+        - Complexity Management
+      description: A conceptual framework that helps decision-makers understand the context of a problem by categorizing it into one of five domains—Clear, Complicated, Complex, Chaotic, or Aporia/Disorder—each defined by the nature of its cause-and-effect relationships and requiring a different approach to action.
+    - entry_name: The 5W1H Framework
+      type:
+        - Information Gathering
+        - Analytical Framework
+        - Prompt Engineering
+      description: A foundational heuristic using six questions (Who, What, When, Where, Why, How) to gather comprehensive information, structure analysis, and provide full context for any situation.
+    - entry_name: Objectives and Key Results (OKRs)
+      type:
+        - Strategic Planning
+        - Goal Setting
+        - Management Framework
+      description: A management methodology for setting ambitious goals (Objectives) and tracking their progress through specific, measurable outcomes (Key Results) to connect high-level strategy with day-to-day execution.
+    - entry_name: Core Prompt Components
+      type:
+        - Prompt Engineering
+        - Foundational Concept
+      description: The five fundamental building blocks (Task, Persona, Context, Constraints, Format) that form the basis of any well-architected prompt, ensuring clarity, focus, and effectiveness.

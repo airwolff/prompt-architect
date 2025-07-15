@@ -1,0 +1,40 @@
+# /knowledge/scope/jtbd.yaml
+# Version: 1.0
+# Last Updated: 2025-07-11
+# Description: An innovation framework positing that customers "hire" products or services to make specific progress or get a "job" done in their lives, shifting focus from product features to the customer's underlying motivation and desired outcome.
+
+entry_name: Jobs to Be Done (JTBD)
+type:
+  - Innovation Framework
+  - Customer Research
+  - Product Strategy
+description: An innovation framework positing that customers "hire" products or services to make specific progress or get a "job" done in their lives, shifting focus from product features to the customer's underlying motivation and desired outcome.
+core_components:
+  - name: Functional Jobs
+    description: The most apparent and practical tasks the customer is trying to accomplish.
+  - name: Emotional Jobs
+    description: Relates to how the customer wants to feel as a result of executing the job, such as secure, confident, or happy.
+  - name: Social Jobs
+    description: Concerned with how the customer wants to be perceived by others as a result of using the product.
+mechanism_and_use:
+  - name: The Four Forces of Progress
+    description: A model used to analyze a purchase decision by identifying the forces promoting change (Push of the situation, Pull of the new solution) and the forces resisting it (Anxiety of the new, Habit of the present).
+  - name: JTBD Timeline Interview
+    description: A research method focused on reconstructing the story of a purchase to uncover the "struggling moment" and causal drivers that led a customer to "hire" a new solution.
+  - name: The Job Map
+    description: A visual deconstruction of a core functional job into its universal process steps, used to identify unmet customer needs and innovation opportunities.
+connections_and_applications:
+  description: JTBD provides a stable, long-term anchor for innovation strategy, as the core "job" a customer needs to do is more stable over time than any particular technology or solution.
+  related_entries:
+    - Design Thinking
+    - Lean Startup
+    - User Personas
+  practical_examples:
+    - name: McDonald's Milkshakes
+      details: A seminal case study revealed morning commuters "hired" thick milkshakes for the job of making a long, boring drive more interesting and providing a tidy, filling breakfast.
+    - name: Netflix vs. Blockbuster
+      details: Customers "fired" Blockbuster and "hired" Netflix because it performed the job of "be entertained at home with minimal effort" far better by eliminating friction like travel, late fees, and limited stock.
+    - name: Apple iPhone
+      details: Apple succeeded by designing the iPhone to address a broad set of functional, emotional, and social jobs, while competitors were focused on the narrow job of "sending email on the go".
+simple_explanation: >
+  People don't buy a drill because they want a drill; they buy it because they want a quarter-inch hole to hang a picture. The 'job' isn't owning a drill, it's the feeling of satisfaction from seeing the picture on the wall. This theory says innovators should focus on helping people achieve that 'job' better, not just on building a better drill.

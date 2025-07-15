@@ -1,0 +1,46 @@
+# /knowledge/scope/cynefin.yaml
+# Version: 1.0
+# Last Updated: 2025-07-11
+# Description: A conceptual framework that helps decision-makers understand the context of a problem by categorizing it into one of five domains—Clear, Complicated, Complex, Chaotic, or Aporia/Disorder—each defined by the nature of its cause-and-effect relationships and requiring a different approach to action.
+
+entry_name: Cynefin Framework
+type:
+  - Decision-Making Framework
+  - Sense-Making Model
+  - Complexity Management
+description: A conceptual framework that helps decision-makers understand the context of a problem by categorizing it into one of five domains—Clear, Complicated, Complex, Chaotic, or Aporia/Disorder—each defined by the nature of its cause-and-effect relationships and requiring a different approach to action.
+core_components:
+  - name: Clear (formerly Simple/Obvious)
+    description: The domain of Best Practice where the relationship between cause and effect is self-evident. The decision model is Sense-Categorize-Respond.
+  - name: Complicated
+    description: The domain of Good Practice and experts where cause and effect are knowable but require analysis. The decision model is Sense-Analyze-Respond.
+  - name: Complex
+    description: The domain of Emergence where cause and effect can only be understood in retrospect. The decision model is Probe-Sense-Respond.
+  - name: Chaotic
+    description: The domain of Rapid Response where there is no relationship between cause and effect. The decision model is Act-Sense-Respond.
+  - name: Aporia (or Disorder/Confusion)
+    description: The central domain representing a state of confusion about which of the other contexts applies. The goal is to break the situation down and move its parts into other domains.
+mechanism_and_use:
+  - name: Contextual Decision-Making Models
+    description: Each domain has a unique action model (e.g., Probe-Sense-Respond for Complex, Sense-Analyze-Respond for Complicated) that guides leaders on the appropriate way to act based on the context.
+  - name: The Clear-to-Chaotic "Cliff"
+    description: A critical dynamic representing the catastrophic collapse from the stable Clear domain into Chaos, often caused by complacency and the failure to see a context shift. This boundary is a one-way "cliff," not a simple border.
+  - name: Clockwise Learning Drift
+    description: The dynamic of knowledge development where situations are deliberately moved from Chaos to Complex to Complicated to Clear as constraints are imposed and understanding increases through experimentation and analysis.
+connections_and_applications:
+  description: The framework serves as a "sense-making device" to help leaders diagnose situations, avoid applying one-size-fits-all solutions, and make decisions appropriately in different contexts.
+  related_entries:
+    - Agile Methodology
+    - Systems Thinking
+    - Complexity Theory
+  practical_examples:
+    - name: Following a Recipe (Clear)
+      details: The steps and outcomes are known and repeatable. It is a best practice.
+    - name: Diagnosing a Car Engine (Complicated)
+      details: There is a correct answer, but finding it requires expert analysis.
+    - name: Managing a Culture Change (Complex)
+      details: The outcome is unpredictable and emerges from the interactions of many people. You must probe with safe-to-fail experiments.
+    - name: Responding to a Natural Disaster (Chaotic)
+      details: The immediate priority is to act decisively to establish order, not to analyze the situation.
+simple_explanation: >
+  Imagine managing a children's party. In the 'Clear' domain, you have a simple party with a fixed plan. In the 'Complicated' domain, you have a party with activities that require expert help, like a chemistry show. In the 'Complex' domain, you just let the kids play—you can't predict what will happen, but patterns will emerge. In the 'Chaotic' domain, a food fight breaks out, and your only goal is to stop it immediately. The framework tells you what kind of "party" you're in so you know how to act.
