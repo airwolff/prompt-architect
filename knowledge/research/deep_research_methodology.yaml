@@ -2,7 +2,9 @@
 # Version: 1.0
 # Last Updated: 2025-07-16
 # Description: This file contains a structured methodology for conducting deep research with AI, combining the CLEAR framework with a phased approach to inquiry.
-# Used_By: instructions_agent_researcher.md
+# Used_By:
+#   - instructions_agent_researcher.md
+#   - instructions_deep_research_coach.md
 
 entry_name: "Deep Research Methodology"
 type:
