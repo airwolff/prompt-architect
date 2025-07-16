@@ -2,6 +2,10 @@
 # Version: 1.0
 # Last Updated: 2025-07-03
 # Description: This file contains the knowledge base for various structured prompting frameworks. It is used by the Prompt Architect to suggest advanced templates for complex tasks.
+# Used_By:
+#   - instructions_blueprint.md
+#   - instructions_builder.md
+#   - instructions_prompt_coach.md
 
 entry_name: Frameworks
 type:

@@ -2,6 +2,7 @@
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: A management methodology for setting ambitious goals (Objectives) and tracking their progress through specific, measurable outcomes (Key Results) to connect high-level strategy with day-to-day execution.
+# Used_By: instructions_blueprint.md
 
 entry_name: Objectives and Key Results (OKRs)
 type:

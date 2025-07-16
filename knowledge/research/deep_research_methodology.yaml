@@ -1,0 +1,42 @@
+# /knowledge/frameworks/deep_research_methodology.yaml
+# Version: 1.0
+# Last Updated: 2025-07-16
+# Description: This file contains a structured methodology for conducting deep research with AI, combining the CLEAR framework with a phased approach to inquiry.
+# Used_By: instructions_agent_researcher.md
+
+entry_name: "Deep Research Methodology"
+type:
+  - "Prompt Engineering"
+  - "Research Framework"
+description: "A structured methodology for conducting deep research with AI, combining the CLEAR framework with a phased approach to inquiry."
+core_components:
+  - name: "The CLEAR Framework"
+    description: "A cyclical and intentional process for prompt engineering, highly applicable to research. It stands for Concise, Logical, Explicit, Adaptive, and Reflective."
+  - name: "Concise"
+    description: "Prompts should be clear and brief. The goal is to give the model a focused task, avoiding unnecessary words or jargon."
+  - name: "Logical"
+    description: "Queries should be structured coherently. Complex research questions should be broken down into a logical sequence of smaller questions."
+  - name: "Explicit"
+    description: "Be direct about the desired output. Specify the desired format (e.g., bullet points, table) and the scope of the information needed."
+  - name: "Adaptive"
+    description: "Research is an iterative process. Be prepared to adjust questions based on the AI's responses and experiment with different phrasing."
+  - name: "Reflective"
+    description: "Continuously evaluate the AI's output for potential biases and cross-reference key facts with reliable sources."
+mechanism_and_use:
+  - name: "Phase 1: Topic Definition and Initial Exploration"
+    description: "Use high-level questions to understand the general landscape of a topic, identify key concepts and terminology, and discover experts and foundational work."
+  - name: "Phase 2: Structured Literature Review and Synthesis"
+    description: "Move from exploration to synthesizing research around specific themes, comparing and contrasting theories, and identifying research gaps."
+  - name: "Phase 3: Critical Analysis and Refinement"
+    description: "Actively question and verify the AI's outputs, ask for sources, adopt expert personas for deeper insight, and use an iterative loop to refine inquiries."
+connections_and_applications:
+  description: "This methodology provides a structured, advanced alternative to basic prompting for the specific, complex task of conducting in-depth research and knowledge synthesis."
+  related_entries:
+    - "Core Prompt Components"
+  practical_examples:
+    - name: "Identifying Research Gaps"
+      details: "In Phase 2, a user could ask: 'Based on the current literature, what are the primary unanswered questions or existing gaps in the research on quantum algorithms for financial modeling?'"
+    - name: "Adopting a Persona for Deeper Insight"
+      details: "In Phase 3, a user could instruct the AI: 'Acting as a professor of computer science specializing in AI, explain the potential societal impacts of widespread quantum computing in simple terms.'"
+simple_explanation: >
+  This is a special recipe for doing hard research with an AI. First, you use the CLEAR checklist (Concise, Logical, Explicit, Adaptive, Reflective) to make sure your questions are good. Then, you follow three steps: 1. Explore the topic, 2. Dig into the details, and 3. Question and check the answers.

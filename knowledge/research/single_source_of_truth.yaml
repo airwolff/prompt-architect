@@ -1,0 +1,25 @@
+# /knowledge/schemas/single_source_of_truth.yaml
+# Version: 1.0
+# Last Updated: 2025-07-16
+# Description: This file contains the master 'Single Source of Truth' schema template for all knowledge base entries.
+# Used_By: instructions_agent_researcher.md
+
+entry_name: [Name of the subject]
+type:
+  - [High-level category]
+description: [A concise summary of the subject.]
+core_components:
+  - name: [Name of the first core part or principle]
+    description: [Details of the first core part.]
+mechanism_and_use:
+  - name: [Name of the first mechanism or process step]
+    description: [Details of how it works or is used.]
+connections_and_applications:
+  description: [A brief note on how the subject relates to other things.]
+  related_entries:
+    - [Name of a related entry]
+  practical_examples:
+    - name: [Name of a real-world example]
+      details: [Details of the example.]
+simple_explanation: >
+  [A simple, child-level explanation of the subject.]

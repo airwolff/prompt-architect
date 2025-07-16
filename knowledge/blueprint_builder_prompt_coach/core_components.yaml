@@ -2,6 +2,10 @@
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: This file contains the consolidated knowledge base for the five core components of prompt architecture: Task, Persona, Context, Constraints, and Format.
+# Used_By:
+#   - instructions_blueprint.md
+#   - instructions_builder.md
+#   - instructions_prompt_coach.md
 
 entry_name: Core Prompt Components
 type:

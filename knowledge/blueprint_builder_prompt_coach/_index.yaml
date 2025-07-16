@@ -2,6 +2,7 @@
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: A master index of all entries in the knowledge base, used for high-level lookup and discovery.
+# Used_By: instructions_blueprint.md
 
 knowledge_base_index:
   entries:
