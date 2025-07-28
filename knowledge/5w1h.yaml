@@ -1,8 +1,10 @@
-# /knowledge/scope/5w1h.yaml
+# /knowledge/blueprint_builder_prompt_coach/5w1h.yaml
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: A foundational heuristic using six questions (Who, What, When, Where, Why, How) to gather comprehensive information, structure analysis, and provide full context for any situation.
-# Used_By: instructions_blueprint.md
+# Used_By:
+#   - instructions_distillation_agent.md
+#   - instructions_plan_agent.md
 
 entry_name: The 5W1H Framework
 type:

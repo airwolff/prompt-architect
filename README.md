@@ -29,11 +29,11 @@ This ecosystem enables a powerful, end-to-end workflow for creating new agents a
 ### General-Purpose Prompt Assistance
 
 * **`The Prompt Coach` (`instructions_prompt_coach.md`):** For one-off tasks not related to agent creation, this agent acts as an expert coach, guiding the user to build a high-quality prompt for a specific analytical or creative task.
-* **`The Prose Researcher` (`instructions_prose_researcher.md`):** For generating standard research documents (e.g., reports, articles) that are not part of the structured YAML knowledge base.
+* **`The Agent Researcher` (`instructions_agent_researcher.md`):** For generating standard research documents (e.g., reports, articles) that are not part of the structured YAML knowledge base.
 
 ## 🏛️ The "Single Source of Truth" Knowledge Schema
 
-All files within the `/knowledge` directory must adhere to the following universal YAML schema.
+All files within the `/knowledge` directory must adhere to the following universal YAML schema. The one exception is the _index.yaml file, which serves as the master index and has its own distinct structure.
 
 ```yaml
 # --- File Header ---

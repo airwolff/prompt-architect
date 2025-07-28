@@ -1,8 +1,9 @@
-# /knowledge/scope/jtbd.yaml
+# /knowledge/blueprint_builder_prompt_coach/jtbd.yaml
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: An innovation framework positing that customers "hire" products or services to make specific progress or get a "job" done in their lives, shifting focus from product features to the customer's underlying motivation and desired outcome.
-# Used_By: instructions_blueprint.md
+# Used_By: 
+#   - instructions_plan_agent.md
 
 entry_name: Jobs to Be Done (JTBD)
 type:
