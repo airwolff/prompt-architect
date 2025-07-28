@@ -14,26 +14,28 @@ A second key objective is to create a flexible **Single Source of Truth** for an
 
 ## 🤖 The Agentic Workflow
 
-This ecosystem enables a powerful, end-to-end workflow for creating new agents and knowledge. The user acts as the "orchestrator," manually running the different agents in sequence.
+This ecosystem enables a powerful, sequential workflow for creating new, specialized agents. The user acts as the orchestrator, running each agent in the correct order to move from a broad concept to a validated, production-ready agent.
 
-### Agent Creation and Knowledge Generation
+The workflow is as follows:
 
-1.  **`The Blueprint Agent` (`instructions_blueprint.md`):** This is the starting point for creating a new agent. It acts as a systems architect, guiding the user through a structured process to create a formal **Agent Design Document**.
-2.  **`The Builder Agent` (`instructions_builder.md`):** This agent takes the completed `Agent Design Document` as input and translates it into the final, high-quality `instructions.md` file for the new agent, applying prompt engineering best practices.
-3.  **`The Researcher Agent` (`instructions_agent_researcher.md`):** This agent runs in parallel with the builder. It also takes the `Agent Design Document` and generates a set of optimized prompts for creating the new agent's required knowledge files, ensuring each one will adhere to the "Single Source of Truth" schema.
+1.  **`1_Distillation_Agent`**: The "Strategist." This is the starting point for any new project. It takes a broad, high-level user idea and, through a socratic and analytical dialogue, decomposes it into one or more single, focused "Problem Statements."
 
-### Knowledge Base Maintenance
+2.  **`2_Plan_Agent`**: The "Systems Analyst." This agent takes a "Problem Statement" as input. It performs a Functional Decomposition to break the problem into its core components and defines the agent's charter and limitations. Its final output is split into two distinct documents to ensure a clean handoff:
+    * A **`Prompt Brief`**, which outlines the agent's function and includes acceptance criteria for testing.
+    * A **`Research Brief`**, which lists the required knowledge files for the agent.
 
-* **`The Indexer Agent` (`instructions_indexer.md`):** This agent reads all the individual knowledge entries and creates a master `_index.yaml` file, which acts as a relational map of the entire knowledge base. This is critical for efficient knowledge retrieval by other agents.
+3.  **`3_Research_Coach_Agent`**: The "Knowledge Architect." This agent receives the `Research Brief`. Its sole job is to generate a set of powerful, targeted research prompts designed to elicit the raw information needed for the knowledge files. It embeds a thematic guidance framework into each prompt to ensure a rich, analytical output.
 
-### General-Purpose Prompt Assistance
+4.  **`4_Data_Synthesis_Agent`**: The "Knowledge Engineer." This agent takes the unstructured, narrative-style research output from the previous step. Its function is to "atomize" this raw text, extracting the vital information and structuring it into the final, clean YAML knowledge files according to the "Single Source of Truth" schema.
 
-* **`The Prompt Coach` (`instructions_prompt_coach.md`):** For one-off tasks not related to agent creation, this agent acts as an expert coach, guiding the user to build a high-quality prompt for a specific analytical or creative task.
-* **`The Agent Researcher` (`instructions_agent_researcher.md`):** For generating standard research documents (e.g., reports, articles) that are not part of the structured YAML knowledge base.
+5.  **`5_Prompt_Coach_Agent`**: The "Prompt Engineer." This agent receives the `Prompt Brief` only *after* the knowledge base has been created. It analyzes the brief to select the optimal prompting framework (e.g., the core components, `RISEN`, `BAB`) and then collaborates with the user to translate the strategic plan into a final, high-performance `instructions.md` file.
+
+6.  **`6_Validation_Agent`**: The "QA Tester." (To be designed). This agent will take a completed agent (its instructions and knowledge files) and test it against the `Acceptance Criteria & Test Cases` defined in the `Prompt Brief`, ensuring the agent performs as designed.
+
 
 ## 🏛️ The "Single Source of Truth" Knowledge Schema
 
-All files within the `/knowledge` directory must adhere to the following universal YAML schema. The one exception is the _index.yaml file, which serves as the master index and has its own distinct structure.
+All files within the `/knowledge` directory must adhere to the following universal YAML schema. The one exception is the `_index.yaml` file, which serves as the master index and has its own distinct structure.
 
 ```yaml
 # --- File Header ---
@@ -64,8 +66,7 @@ connections_and_applications:
 simple_explanation: >
   [A simple, child-level explanation of the subject to demonstrate core understanding.]
 ```
-## 🔮 Future Vision: Independence and Automation
 
+🔮 Future Vision: Independence and Automation
 This project currently operates as an agentic architecture within a general AI environment like Gemini, with the user manually orchestrating the workflow.
-
-The ultimate vision is to transition this entire system to a **local, automated environment, likely using Python**. The components in this repository—the agent instructions and knowledge files—serve as the direct blueprint for that future build. They ensure that the core logic, data structures, and prompts are well-defined, tested, and validated before any production code is written. This "prompt-first" development approach allows for rapid prototyping and iteration on the system's logic in a flexible environment before committing to a specific code implementation.
+The ultimate vision is to transition this entire system to a local, automated environment, likely using Python. The components in this repository—the agent instructions and knowledge files—serve as the direct blueprint for that future build. They ensure that the core logic, data structures, and prompts are well-defined, tested, and validated before any production code is written. This "prompt-first" development approach allows for rapid prototyping and iteration on the system's logic in a flexible environment before committing to a specific code implementation.
