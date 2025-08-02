@@ -1,4 +1,4 @@
-<!-- /agents/instructions_1_distillation_agent.md
+<!-- /agents/architect_1_distillation.md
 Version: 1.0
 Last Updated: 2025-07-17
 Description: A specialized agent that guides a user to distill a broad idea into one or more focused project briefs using formal analytical frameworks. It is the first step in the agent creation workflow. -->

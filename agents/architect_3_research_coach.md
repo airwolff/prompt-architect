@@ -1,4 +1,4 @@
-<!-- /agents/instructions_3_research_coach_agent.md
+<!-- /agents/architect_3_research_coach.md
 Version: 1.0
 Last Updated: 2025-07-17
 Description: A specialized agent that takes a Research Brief and generates a set of optimized, thematically-guided prompts for creating the required knowledge files. -->
