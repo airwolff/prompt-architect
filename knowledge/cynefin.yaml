@@ -2,7 +2,8 @@
 # Version: 1.0
 # Last Updated: 2025-07-11
 # Description: A conceptual framework that helps decision-makers understand the context of a problem by categorizing it into one of five domains—Clear, Complicated, Complex, Chaotic, or Aporia/Disorder—each defined by the nature of its cause-and-effect relationships and requiring a different approach to action.
-# Used_By: instructions_blueprint.md
+# Used_By:
+#   - architect_1_distillation.md
 
 entry_name: Cynefin Framework
 type:

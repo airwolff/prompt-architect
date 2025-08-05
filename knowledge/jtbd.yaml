@@ -3,7 +3,7 @@
 # Last Updated: 2025-07-11
 # Description: An innovation framework positing that customers "hire" products or services to make specific progress or get a "job" done in their lives, shifting focus from product features to the customer's underlying motivation and desired outcome.
 # Used_By: 
-#   - instructions_plan_agent.md
+#   - architect_2_plan.md
 
 entry_name: Jobs to Be Done (JTBD)
 type:

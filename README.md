@@ -18,20 +18,21 @@ This ecosystem enables a powerful, sequential workflow for creating new, special
 
 The workflow is as follows:
 
-1.  **`1_Distillation_Agent`**: The "Strategist." This is the starting point for any new project. It takes a broad, high-level user idea and, through a socratic and analytical dialogue, decomposes it into one or more single, focused "Problem Statements."
+1.  **`architect_1_distillation`**: The "Strategist." This is the starting point for any new project. It takes a broad, high-level user idea and, through a socratic and analytical dialogue, decomposes it into one or more single, focused "Problem Statements."
 
-2.  **`2_Plan_Agent`**: The "Systems Analyst." This agent takes a "Problem Statement" as input. It performs a Functional Decomposition to break the problem into its core components and defines the agent's charter and limitations. Its final output is split into two distinct documents to ensure a clean handoff:
+2.  **`architect_2_plan`**: The "Systems Analyst." This agent takes a "Problem Statement" as input. It performs a Functional Decomposition to break the problem into its core components and defines the agent's charter and limitations. Its final output is split into two distinct documents to ensure a clean handoff:
     * A **`Prompt Brief`**, which outlines the agent's function and includes acceptance criteria for testing.
     * A **`Research Brief`**, which lists the required knowledge files for the agent.
 
-3.  **`3_Research_Coach_Agent`**: The "Knowledge Architect." This agent receives the `Research Brief`. Its sole job is to generate a set of powerful, targeted research prompts designed to elicit the raw information needed for the knowledge files. It embeds a thematic guidance framework into each prompt to ensure a rich, analytical output.
+3.  **`architect_3_research_coach`**: The "Knowledge Architect." This agent receives the `Research Brief`. Its sole job is to generate a set of powerful, targeted research prompts designed to elicit the raw information needed for the knowledge files.
 
-4.  **`4_Data_Synthesis_Agent`**: The "Knowledge Engineer." This agent takes the unstructured, narrative-style research output from the previous step. Its function is to "atomize" this raw text, extracting the vital information and structuring it into the final, clean YAML knowledge files according to the "Single Source of Truth" schema.
+4.  **`architect_4_data_synthesis`**: The "Knowledge Engineer." This agent takes the unstructured, narrative-style research output from the previous step. Its function is to "atomize" this raw text, extracting the vital information and structuring it into the final, clean YAML knowledge files.
 
-5.  **`5_Prompt_Coach_Agent`**: The "Prompt Engineer." This agent receives the `Prompt Brief` only *after* the knowledge base has been created. It analyzes the brief to select the optimal prompting framework (e.g., the core components, `RISEN`, `BAB`) and then collaborates with the user to translate the strategic plan into a final, high-performance `instructions.md` file.
+5.  **`architect_5_indexer`**: The "Librarian." This agent takes the newly created knowledge files and generates a dedicated `_index.yaml` file for them. This provides the final agent with a "table of contents" of its own knowledge base, improving its runtime performance.
 
-6.  **`6_Validation_Agent`**: The "QA Tester." (To be designed). This agent will take a completed agent (its instructions and knowledge files) and test it against the `Acceptance Criteria & Test Cases` defined in the `Prompt Brief`, ensuring the agent performs as designed.
+6.  **`architect_6_prompt_coach`**: The "Prompt Engineer." This agent receives the `Prompt Brief` and the complete set of knowledge files (including the `_index.yaml`). It then collaborates with the user to translate the strategic plan into a final, high-performance `instructions.md` file.
 
+7.  **`architect_7_validation`**: The "QA Tester." This agent takes a completed agent and tests it against the `Acceptance Criteria & Test Cases` defined in the `Prompt Brief`, ensuring the agent performs as designed.
 
 ## 🏛️ The "Single Source of Truth" Knowledge Schema
 
@@ -67,6 +68,6 @@ simple_explanation: >
   [A simple, child-level explanation of the subject to demonstrate core understanding.]
 ```
 
-🔮 Future Vision: Independence and Automation
+## 🔮 Future Vision: Independence and Automation
 This project currently operates as an agentic architecture within a general AI environment like Gemini, with the user manually orchestrating the workflow.
 The ultimate vision is to transition this entire system to a local, automated environment, likely using Python. The components in this repository—the agent instructions and knowledge files—serve as the direct blueprint for that future build. They ensure that the core logic, data structures, and prompts are well-defined, tested, and validated before any production code is written. This "prompt-first" development approach allows for rapid prototyping and iteration on the system's logic in a flexible environment before committing to a specific code implementation.

@@ -2,8 +2,8 @@
 Version: 1.0
 Last Updated: 2025-07-17
 Description: A set of thematic questions to guide the deep research process, ensuring a comprehensive and analytical output. 
-# Used_By: 
-#   - instructions_3_research_coach_agent.md -->
+# Used_By:
+#   - architect_3_research.md -->
 
 ### Thematic Research Guidance
 

@@ -2,7 +2,8 @@
 # Version: 1.0
 # Last Updated: 2025-07-16
 # Description: This file contains the master 'Single Source of Truth' schema template for all knowledge base entries.
-# Used_By: instructions_agent_researcher.md
+# Used_By:
+#   - architect_4_data_synthesis.md
 
 entry_name: [Name of the subject]
 type:

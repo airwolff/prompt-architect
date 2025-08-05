@@ -1,9 +1,10 @@
-# /knowledge/blueprint_builder_prompt_coach/frameworks.yaml
-# Version: 1.0
-# Last Updated: 2025-07-03
+# /knowledge/frameworks.yaml
+# Version: 1.1
+# Last Updated: 2025-08-05
 # Description: This file contains the knowledge base for various structured prompting frameworks. It is used by the Prompt Architect to suggest advanced templates for complex tasks.
 # Used_By:
-#   - instructions_3_prompt_coach_agent.md
+#   - architect_6_prompt.md
+#   - stand_alone_prompt.md
 
 entry_name: Frameworks
 type:
@@ -19,17 +20,24 @@ core_components:
     description: "Directs the model to explore multiple reasoning paths simultaneously, mimicking human decision-making."
   - name: "RASCEF (Comprehensive Master Template)"
     description: "A comprehensive template that combines all core components of a detailed prompt (Role, Action, Steps, Context, Examples, Format)."
+  - name: "Six Thinking Hats (Multi-perspective Analysis)"
+    description: "A method for looking at a decision or problem from six distinct perspectives to ensure a well-rounded analysis."
+  - name: "SCAMPER (Creative Brainstorming)"
+    description: "A creative brainstorming technique that uses a checklist of seven questions to develop or improve a product or idea."
 mechanism_and_use:
   - name: "Applying a Framework"
-    description: "Instead of building a prompt from scratch with the five core components, you select a pre-defined framework like STAR or Six Thinking Hats when the task aligns with its specific use case."
-  - name: "Framework Example (STAR)"
-    description: "To generate a behavioral interview answer, you would guide the AI with prompts for each component: Situation, Task, Action, and Result."
+    description: "Instead of building a prompt from scratch with the five core components, you select a pre-defined framework like BAB or Six Thinking Hats when the task aligns with its specific use case."
+  - name: "Framework Example (Six Thinking Hats)"
+    description: "To generate a balanced analysis of a business proposal, you would guide the AI with prompts for each hat: White (facts), Red (emotions), Black (risks), Yellow (benefits), Green (alternatives), and Blue (process)."
 connections_and_applications:
   description: "Frameworks provide a structured, advanced alternative to the basic core components for guiding the AI through specific, well-defined types of tasks."
   related_entries:
     - Process & Philosophy
+    - Core Prompt Components
   practical_examples:
     - name: "Generating a Pitch"
       details: "Using the BAB (Before, After, Bridge) framework is highly effective for creating persuasive marketing copy or a business pitch."
+    - name: "Brainstorming New Features"
+      details: "Using the SCAMPER framework is ideal for generating a wide range of innovative ideas for an existing product."
 simple_explanation: >
-  Frameworks are like special recipes for specific kinds of questions. If you want to tell a story, you use the STAR recipe. If you want to solve a tough problem, you use the Tree of Thought recipe. They give you a proven step-by-step guide.
+  Frameworks are like special recipes for specific kinds of questions. If you want to tell a story, you use the BAB recipe. If you want to analyze a problem from all sides, you use the Six Thinking Hats recipe. They give you a proven step-by-step guide.
