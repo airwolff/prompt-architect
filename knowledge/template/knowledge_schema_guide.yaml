@@ -1,0 +1,133 @@
+# /knowledge/template/knowledge_schema_guide.yaml
+# Version: 2.0
+# Last Updated: 2025-08-15
+# Description: Flexible schema guide with three-tier field system for adaptive knowledge synthesis
+# Used_By: architect_4_data_synthesis.md
+
+# ============================================
+# TIER 1: REQUIRED CORE FIELDS
+# Must always be present (use placeholder if missing)
+# ============================================
+
+entry_name: "[Subject name - specific and searchable]"
+type:
+  - "[Primary category]"
+  - "[Secondary category if applicable]"
+description: >
+  [Concise summary that captures the essence in 1-2 sentences. 
+  Must answer: What is this and why does it matter?]
+
+# ============================================
+# TIER 2: STANDARD OPTIONAL FIELDS
+# Include only if content exists (omit if empty)
+# ============================================
+
+core_components:
+  - name: "[Component name]"
+    description: "[What it is and its role]"
+
+mechanism_and_use:
+  - name: "[Process/mechanism name]"
+    description: "[How it works in practice]"
+
+connections_and_applications:
+  description: "[Brief context of relationships]"
+  related_entries:
+    - "[Explicitly connected concept]"
+  practical_examples:
+    - name: "[Specific real-world case]"
+      details: "[Concrete details with outcomes if available]"
+
+simple_explanation: >
+  [Accessible analogy or explanation that a non-expert would understand.
+  Should capture the core concept in familiar terms.]
+
+# ============================================
+# TIER 3: DOMAIN EXTENSION FIELDS
+# Add only when triggered by content patterns
+# ============================================
+
+# Technical/Engineering Extensions
+key_formulas:
+  - name: "[Formula name]"
+    formula: "[Exact mathematical expression]"
+    explanation: "[What it calculates]"
+
+algorithms:
+  - name: "[Algorithm name]"
+    steps:
+      - "[Step 1]"
+      - "[Step 2]"
+    complexity: "[If mentioned: O(n), etc.]"
+
+code_samples:
+  - language: "[Programming language]"
+    purpose: "[What this demonstrates]"
+    code: |
+      [Exact code block]
+
+# Business/Strategic Extensions
+risk_factors:
+  - risk: "[Specific risk]"
+    impact: "[Potential consequence]"
+    mitigation: "[How to address]"
+
+implementation_requirements:
+  technical:
+    - "[Technical requirement]"
+  skills:
+    - "[Required expertise]"
+  timeline: "[Typical duration/phases]"
+  resources: "[Budget/personnel needs]"
+
+cost_benefit_analysis:
+  costs:
+    - "[Cost element]"
+  benefits:
+    - "[Benefit element]"
+  roi_timeline: "[Payback period if mentioned]"
+
+# Process/Operational Extensions  
+maturity_levels:
+  - level: "[Maturity stage name]"
+    characteristics: "[What defines this level]"
+
+best_practices:
+  - practice: "[Recommended approach]"
+    rationale: "[Why this works]"
+
+common_pitfalls:
+  - pitfall: "[What to avoid]"
+    consequence: "[What happens if not avoided]"
+    prevention: "[How to prevent]"
+
+# Innovation/Future Extensions
+emerging_trends:
+  - trend: "[Trend name]"
+    description: "[What's changing]"
+    timeline: "[When this might matter]"
+
+future_implications:
+  - implication: "[Future consideration]"
+    probability: "[If mentioned: likely/possible/speculative]"
+
+# Regulatory/Compliance Extensions
+regulatory_compliance:
+  - regulation: "[Regulation name/number]"
+    jurisdiction: "[Where it applies]"
+    requirements: "[What must be done]"
+
+standards_certifications:
+  - standard: "[Standard name]"
+    body: "[Issuing organization]"
+    relevance: "[Why this matters]"
+
+# ============================================
+# META FIELDS (System Use)
+# ============================================
+
+_meta:
+  domain_detected: "[Primary domain]"
+  secondary_domains: ["[If applicable]"]
+  synthesis_confidence: "[high/medium/low based on source completeness]"
+  new_patterns_observed: "[Any patterns not matching known domains]"

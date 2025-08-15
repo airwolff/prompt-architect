@@ -6,11 +6,11 @@ This project is a complete system for designing, building, and maintaining speci
 
 The primary objective of this project is to systematize the creation of high-quality, architecturally sound prompts for AI agents. It replaces a monolithic, jack-of-all-trades approach with a distributed system of specialized agents, each an expert in a single domain.
 
-A second key objective is to create a flexible **Single Source of Truth** for any given topic. By deconstructing complex subjects into their atomic components and storing them in a universal YAML schema, the system enables:
+A second key objective is to create a flexible **Knowledge Base** for any given topic. By using an adaptive, three-tier schema, the system enables:
 
--   **True Customization:** Allows AI agents to combine components from different knowledge entries to create novel, hybrid solutions.
--   **Systematic Processing:** Provides a predictable structure that AI can reliably parse, analyze, and utilize.
--   **Scalability and Maintenance:** Easily add, update, or improve knowledge entries without breaking the entire system.
+-   **Intelligent Structuring:** Allows the AI to dynamically adapt the output format to best represent the source material's domain and content.
+-   **Systematic Processing:** Provides a predictable yet flexible structure that AI can reliably parse, analyze, and utilize.
+-   **Scalability and Maintenance:** Easily add, update, or improve knowledge entries with a schema that supports both universal standards and domain-specific extensions.
 
 ## 🤖 The Agentic Workflow
 
@@ -26,7 +26,7 @@ The workflow is as follows:
 
 3.  **`architect_3_research_coach`**: The "Knowledge Architect." This agent receives the `Research Brief`. Its sole job is to generate a set of powerful, targeted research prompts designed to elicit the raw information needed for the knowledge files.
 
-4.  **`architect_4_data_synthesis`**: The "Knowledge Engineer." This agent takes the unstructured, narrative-style research output from the previous step. Its function is to "atomize" this raw text, extracting the vital information and structuring it into the final, clean YAML knowledge files.
+4.  **`architect_4_data_synthesis`**: The "Knowledge Engineer." This intelligent agent takes unstructured research and transforms it into structured knowledge. It detects the document's domain (e.g., Technical, Business), applies a context-specific prioritization matrix, and uses an adaptive schema to generate a clean, potent, and "comprehensively minimalist" YAML file.
 
 5.  **`architect_5_indexer`**: The "Librarian." This agent takes the newly created knowledge files and generates a dedicated `_index.yaml` file for them. This provides the final agent with a "table of contents" of its own knowledge base, improving its runtime performance.
 
@@ -34,40 +34,33 @@ The workflow is as follows:
 
 7.  **`architect_7_validation`**: The "QA Tester." This agent takes a completed agent and tests it against the `Acceptance Criteria & Test Cases` defined in the `Prompt Brief`, ensuring the agent performs as designed.
 
-## 🏛️ The "Single Source of Truth" Knowledge Schema
+## 🏛️ The Flexible Knowledge Schema
 
-All files within the `/knowledge` directory must adhere to the following universal YAML schema. The one exception is the `_index.yaml` file, which serves as the master index and has its own distinct structure.
+All files within the `/knowledge` directory are generated based on the flexible `knowledge_schema_guide.yaml`. This guide moves beyond a rigid, static template to an adaptive, three-tier system:
 
-```yaml
-# --- File Header ---
-# /knowledge/[entry_name].yaml
-# Version: 1.0
-# Last Updated: 2025-MM-DD
-# Description: A brief, one-sentence explanation of the file's content.
-# Used_By: [List of instruction files that use this knowledge file]
+* **Tier 1: Required Core Fields:** A minimal set of universal keys (`entry_name`, `type`, `description`) that must be present in every file, ensuring a consistent foundation.
+* **Tier 2: Standard Optional Fields:** Common keys (`core_components`, `practical_examples`, etc.) that are only included if relevant content exists in the source document. This keeps the output clean and focused.
+* **Tier 3: Domain Extension Fields:** Specialized sections (`key_formulas`, `risk_factors`, `algorithms`, etc.) that the **Knowledge Engineer** agent dynamically adds to the file when it detects corresponding patterns in the source text.
 
-# --- Data Structure ---
-entry_name: "[Name of the subject]"
-type:
-  - "[High-level category]"
-description: "[A concise summary of the subject.]"
-core_components:
-  - name: "[Name of the first core part or principle]"
-    description: "[Details of the first core part.]"
-mechanism_and_use:
-  - name: "[Name of the first mechanism or process step]"
-    description: "[Details of how it works or is used.]"
-connections_and_applications:
-  description: "[A brief note on how the subject relates to other things.]"
-  related_entries:
-    - "[Name of a related entry]"
-  practical_examples:
-    - name: "[Name of a real-world example]"
-      details: "[Details of the example.]"
-simple_explanation: >
-  [A simple, child-level explanation of the subject to demonstrate core understanding.]
-```
+This architecture ensures that each knowledge file is a "comprehensively minimalist" model of the subject—containing everything that is important but making every line earn its presence.
 
-## 🔮 Future Vision: Independence and Automation
+## 🔮 Future Vision & Roadmap
+
+### Independence and Automation
 This project currently operates as an agentic architecture within a general AI environment like Gemini, with the user manually orchestrating the workflow.
-The ultimate vision is to transition this entire system to a local, automated environment, likely using Python. The components in this repository—the agent instructions and knowledge files—serve as the direct blueprint for that future build. They ensure that the core logic, data structures, and prompts are well-defined, tested, and validated before any production code is written. This "prompt-first" development approach allows for rapid prototyping and iteration on the system's logic in a flexible environment before committing to a specific code implementation.
+
+The ultimate vision is to transition this entire system to a local, automated environment, likely using Python. The components in this repository—the agent instructions and knowledge files—serve as the direct blueprint for that future build. This "prompt-first" development approach allows for rapid prototyping and iteration on the system's logic in a flexible environment before committing to a specific code implementation.
+
+### Future Enhancements
+The following are concepts for future versions to enhance the framework's robustness and analytical power.
+
+* **Verification Agent (Step 4.5):** A potential future step involves a dedicated agent that audits the generated YAML against the source document. This agent would act as an automated quality assurance check to programmatically verify that every statement is grounded in the source text, eliminating hallucinations.
+* **Field-Level Confidence Scoring:** A more granular version of the metadata block could include confidence scores on individual data points within the YAML, providing insight into which items are direct facts versus interpretations.
+* **Semantic Relationship Typing:** This would evolve the `related_entries` field from a simple list to a structured object that defines the nature of the relationship, enabling more sophisticated reasoning and prompt construction by downstream agents. For example:
+    ```yaml
+    related_entries:
+      - entry: "Accounts Payable (A/P)"
+        relationship: "is a counterpart to"
+      - entry: "Working Capital Management"
+        relationship: "is a component of"
+    ```
